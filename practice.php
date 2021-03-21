@@ -4,15 +4,17 @@ echo "\n";
 $a = 3;
 $b = 7;
 echo $a+$b;
+echo "\n";
 $array_mouth = ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"];
 echo $array_mouth[7];
+echo "\n";
 $hello = "Hello,";
 $name = "seki-kentaro";
 $world = "'s World!";
 echo $hello.$name.$world;
 $tech_boost = "tech";
 echo $tech_boost . " boost";
-
+echo "\n";
 $calendar_2018 = [
   "January" => "1月",
   "February" => "2月",
@@ -28,6 +30,7 @@ $calendar_2018 = [
   "December" => "12月"
 ];
 echo $calendar_2018["December"];
+echo "\n";
 
 $height = 160;
 if ($height < 150) {
@@ -39,19 +42,34 @@ if ($height < 150) {
 } else {
   echo "ご乗車になれます。";
 }
+echo "\n";
+
+$name = "seki-kentaro";
+if($name = "seki-kentaro") {
+  echo "私は あなたの名前 です";
+}else {
+  echo "あなたの名前ではありません";
+}
+echo "\n";
+
+$total = 0;
+for($i = 0; $i < 10000; $i++){
+  $total += $i;
+}
+echo $total;
+echo "\n";
 
 $fruits = array("aplle","orenge","banana","peach","strawberry","berry");
 foreach($fruits as $fruits){
-  echo "neme is" . $fruits;
+  echo "neme is " . $fruits;
   echo "\n";
 }
-
-$start = 0;
+echo "\n";
+$start = 1;
 $end = 100;
 
 for($i = $start; $i <= $end; $i++){
-
-if($i / 5 == 0){
+if($i % 5 == 0) {
     echo $i;
   }
 }
