@@ -1,5 +1,6 @@
 <?php
 echo 'hello php!';
+echo "\n";
 $a = 3;
 $b = 7;
 echo $a+$b;
@@ -27,3 +28,30 @@ $calendar_2018 = [
   "December" => "12月"
 ];
 echo $calendar_2018["December"];
+
+$height = 160;
+if ($height < 150) {
+  echo "150cm 未満の方はご乗車できません。";
+} 
+$height = 160;
+if ($height < 150) {
+  echo "150cm 未満の方はご乗車できません。";
+} else {
+  echo "ご乗車になれます。";
+}
+
+$fruits = array("aplle","orenge","banana","peach","strawberry","berry");
+foreach($fruits as $fruits){
+  echo "neme is" . $fruits;
+  echo "\n";
+}
+
+$start = 0;
+$end = 100;
+
+for($i = $start; $i <= $end; $i++){
+
+if($i / 5 == 0){
+    echo $i;
+  }
+}
